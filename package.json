@@ -1,0 +1,27 @@
+{
+  "name": "game",
+  "version": "1.0.0",
+  "description": "Space Invaders",
+  "main": "Game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnikSingha/Space_Invaders.git"
+  },
+  "author": "Anik Singha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnikSingha/Space_Invaders/issues"
+  },
+  "homepage": "https://github.com/AnikSingha/Space_Invaders#readme",
+  "devDependencies": {
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "express": "^4.17.2",
+    "phaser": "^3.23.0"
+  }
+}
