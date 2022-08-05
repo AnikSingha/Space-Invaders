@@ -22,9 +22,10 @@ function preload() {
 
   function create() {
       //this.sound.add('song');
+      game.input.mouse.capture = true;
       this.add.image(440,300,'background');
       gameState.active = true;
-      this.input.on('pointerup', () => {
+      this.input.on('pointerdown', () => {
           if (gameState.active === false) {
               this.scene.restart();
           }
@@ -84,7 +85,6 @@ function preload() {
       gameState.active = false;
       gameState.enemyVelocity = 1;
       this.physics.pause();
-      won = 0
       this.add.text(100, 200, 'Game Over, click to restart', { fontSize: '15px', fill: '#FFFFFF' });
     });
     this.physics.add.collider(gameState.enemies,platforms, () => {
@@ -113,7 +113,6 @@ function preload() {
         won += 1
         this.physics.pause()
         gameState.active = false;
-        //const win = this.add.text(200,200,"YOU WON", {fontSize: '15px', fill: '#FFFFFF'})
         this.scene.restart()
        } else {
         gameState.enemies.getChildren().forEach(bug => {
