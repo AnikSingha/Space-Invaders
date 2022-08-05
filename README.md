@@ -10,3 +10,5 @@ Left arrow key - Move your ship to the left
 
 ## Disclaimer
 In some cases an enemy attack may not directly hit your ship but you will still die. This is because the sprite used for the player ship was downsized. This is only a novel project I created within a few hours and I don\'t plan on fixing this issue.
+
+To play the game click [here](https://spaceinvaderstime.herokuapp.com/)
